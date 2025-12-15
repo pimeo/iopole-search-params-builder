@@ -1,0 +1,33 @@
+{
+  "name": "iopole-search-params-builder",
+  "version": "0.1.0",
+  "description": "iopole search params builder",
+  "keywords": [
+    "iopole",
+    "search",
+    "query",
+    "url",
+    "builder",
+    "parameters",
+    "lucene",
+    "pdp"
+  ],
+  "license": "MIT",
+  "author": "pimeo",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "build": "rm -rf dist && node esbuild.mjs"
+  },
+  "dependencies": {
+    "jest": "^30.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.1",
+    "esbuild-node-externals": "^1.20.1"
+  }
+}
